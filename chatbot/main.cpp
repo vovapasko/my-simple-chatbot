@@ -39,6 +39,7 @@ public:
         answers = par_answers;
         correct_answer_num = correct_answer;
     }
+    
     virtual ~Question() {}
 
     void start_quiz()
