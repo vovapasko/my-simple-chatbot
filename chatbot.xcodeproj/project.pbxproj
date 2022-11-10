@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41DFA9A6291D654700ACFC56 /* Question.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41DFA9A4291D654700ACFC56 /* Question.cpp */; };
 		AAB9834326848CF20094F32A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAB9834226848CF20094F32A /* main.cpp */; };
 		AAB9834B26848E250094F32A /* helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAB9834A26848E250094F32A /* helper.cpp */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		41DFA9A4291D654700ACFC56 /* Question.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Question.cpp; sourceTree = "<group>"; };
+		41DFA9A5291D654700ACFC56 /* Question.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Question.hpp; sourceTree = "<group>"; };
 		AA26F6C32684C93F00A84466 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		AAB9833F26848CF20094F32A /* chatbot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = chatbot; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAB9834226848CF20094F32A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -65,6 +68,8 @@
 				AAB9834226848CF20094F32A /* main.cpp */,
 				AAB9834926848DF10094F32A /* helper.h */,
 				AAB9834A26848E250094F32A /* helper.cpp */,
+				41DFA9A4291D654700ACFC56 /* Question.cpp */,
+				41DFA9A5291D654700ACFC56 /* Question.hpp */,
 			);
 			path = chatbot;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAB9834326848CF20094F32A /* main.cpp in Sources */,
+				41DFA9A6291D654700ACFC56 /* Question.cpp in Sources */,
 				AAB9834B26848E250094F32A /* helper.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -26,3 +26,9 @@ int calculate_age(int r3, int r5, int r7)
     return (r3 * 70 + r5 * 21 + r7 * 15) % 105;
 }
 
+
+template <typename T>
+void print(T t)
+{
+    std::cout << t << std::endl;
+}
