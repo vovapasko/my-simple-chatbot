@@ -9,16 +9,19 @@ void make_bot_count_to(int);
 const std::string name = "Aid";
 const int creation_year = 2021;
  
-
-
-int main()
-{
+void introduce(){
     std::cout << "Hello, My name is " + name << std::endl;
     std::cout << "I was created in " + std::to_string(creation_year) << std::endl;
+}
+
+void ask_user_name(){
     std::string user_name;
     std::cout << "Please, remind me your name" << std::endl;
     user_name = input_str();
     std::cout << "What a great name you have, " + user_name + "!" << std::endl;
+}
+
+void calculate_user_age(){
     int remainder3;
     int remainder5;
     int remainder7;
@@ -28,10 +31,16 @@ int main()
     remainder7 = input_int();
     int users_age = calculate_age(remainder3, remainder5, remainder7);
     std::cout << "Your age is " + std::to_string(users_age) + " that's a good time to start programming!" << std::endl;
+}
+
+void count_up(){
     int count_up_to;
     std::cout << "Now I will prove to you that I can count to any number you want." << std::endl;
     count_up_to = input_int();
     make_bot_count_to(count_up_to);
+}
+
+void start_quiz(){
     std::string question = "Why do we use methods?";
     std::map<int, std::string> answers = {
         {1, "To repeat a statement multiple times."},
@@ -42,6 +51,15 @@ int main()
     int correct_answer_num = 2;
     Question q = Question{question, answers, correct_answer_num};
     q.start_quiz();
+}
+
+
+int main()
+{
+    introduce();
+    ask_user_name();
+    calculate_user_age();
+    start_quiz();
 }
 
 
