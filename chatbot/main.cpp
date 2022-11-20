@@ -8,28 +8,28 @@ void make_bot_count_to(int);
 // declared const variables
 const std::string name = "Aid";
 const int creation_year = 2021;
-using namespace std; 
+ 
 
 
 int main()
 {
-    cout << "Hello, My name is " + name << endl;
-    cout << "I was created in " + std::to_string(creation_year) << endl;
+    std::cout << "Hello, My name is " + name << std::endl;
+    std::cout << "I was created in " + std::to_string(creation_year) << std::endl;
     std::string user_name;
-    cout << "Please, remind me your name" << endl;
+    std::cout << "Please, remind me your name" << std::endl;
     user_name = input_str();
-    cout << "What a great name you have, " + user_name + "!" << endl;
+    std::cout << "What a great name you have, " + user_name + "!" << std::endl;
     int remainder3;
     int remainder5;
     int remainder7;
-    cout << "Enter remainders of dividing your age by 3, 5 and 7." << endl;
+    std::cout << "Enter remainders of dividing your age by 3, 5 and 7." << std::endl;
     remainder3 = input_int();
     remainder5 = input_int();
     remainder7 = input_int();
     int users_age = calculate_age(remainder3, remainder5, remainder7);
-    cout << "Your age is " + std::to_string(users_age) + " that's a good time to start programming!" << endl;
+    std::cout << "Your age is " + std::to_string(users_age) + " that's a good time to start programming!" << std::endl;
     int count_up_to;
-    cout << "Now I will prove to you that I can count to any number you want." << endl;
+    std::cout << "Now I will prove to you that I can count to any number you want." << std::endl;
     count_up_to = input_int();
     make_bot_count_to(count_up_to);
     std::string question = "Why do we use methods?";
@@ -50,6 +50,6 @@ void make_bot_count_to(int count_to)
 {
     for (int i = 0; i <= count_to; i++)
     {
-        cout << std::to_string(i) + "!" << endl;
+        std::cout << std::to_string(i) + "!" << std::endl;
     }
 }
