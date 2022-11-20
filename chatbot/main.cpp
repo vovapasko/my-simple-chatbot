@@ -8,28 +8,28 @@ void make_bot_count_to(int);
 // declared const variables
 const std::string name = "Aid";
 const int creation_year = 2021;
-
+using namespace std; 
 
 
 int main()
 {
-    print("Hello, My name is " + name);
-    print("I was created in " + std::to_string(creation_year));
+    cout << "Hello, My name is " + name << endl;
+    cout << "I was created in " + std::to_string(creation_year) << endl;
     std::string user_name;
-    print("Please, remind me your name");
+    cout << "Please, remind me your name" << endl;
     user_name = input_str();
-    print("What a great name you have, " + user_name + "!");
+    cout << "What a great name you have, " + user_name + "!" << endl;
     int remainder3;
     int remainder5;
     int remainder7;
-    print("Enter remainders of dividing your age by 3, 5 and 7.");
+    cout << "Enter remainders of dividing your age by 3, 5 and 7." << endl;
     remainder3 = input_int();
     remainder5 = input_int();
     remainder7 = input_int();
     int users_age = calculate_age(remainder3, remainder5, remainder7);
-    print("Your age is " + std::to_string(users_age) + " that's a good time to start programming!");
+    cout << "Your age is " + std::to_string(users_age) + " that's a good time to start programming!" << endl;
     int count_up_to;
-    print("Now I will prove to you that I can count to any number you want.");
+    cout << "Now I will prove to you that I can count to any number you want." << endl;
     count_up_to = input_int();
     make_bot_count_to(count_up_to);
     std::string question = "Why do we use methods?";
@@ -50,6 +50,6 @@ void make_bot_count_to(int count_to)
 {
     for (int i = 0; i <= count_to; i++)
     {
-        print(std::to_string(i) + "!");
+        cout << std::to_string(i) + "!" << endl;
     }
 }

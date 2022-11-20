@@ -7,14 +7,13 @@
 #include <map>
 #include "Question.hpp"
 #include "helper.h"
-template <typename T>
-void print(T);
+using namespace std;
 
 void Question::print_answers()
 {
     for (auto &&answer : answers)
     {
-        print(std::to_string(answer.first) + ". " + answer.second);
+        cout << std::to_string(answer.first) + ". " + answer.second << endl;
     }
 }
 
@@ -34,16 +33,16 @@ Question::Question(std::string question, std::map<int, std::string> par_answers,
 void Question::start_quiz()
 {
     bool correct_answered = false;
-    print("Let's make some quiz");
-    print(question_text);
+    cout << "Let's make some quiz" << endl;
+    cout << question_text << endl;
     print_answers();
     while (correct_answered == false)
     {
         user_answer = input_str();
         correct_answered = validate_answer(user_answer);
         if (!correct_answered){
-            print("Please, try again.");
+            cout << "Please, try again." << endl;
         }
     }
-    print("Congratulations, have a nice day!");
+    cout << "Congratulations, have a nice day!" << endl;
 }
